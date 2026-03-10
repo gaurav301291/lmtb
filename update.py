@@ -39,7 +39,7 @@ if len(DATABASE_URL) == 0:
     DATABASE_URL = None
 
 if DATABASE_URL is not None:
-    conn = MongoClient(DATABASE_URL)
+    conn = MongoClient(mongodb+srv://gauravbpatel30_db_user:OkXmCaloMylsF97k@cluster0.qcnfq7f.mongodb.net/?appName=Cluster0)
     db = conn.wzmlx
     old_config = db.settings.deployConfig.find_one({'_id': bot_id})
     config_dict = db.settings.config.find_one({'_id': bot_id})
