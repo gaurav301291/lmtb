@@ -34,7 +34,7 @@ if len(BOT_TOKEN) == 0:
 
 bot_id = BOT_TOKEN.split(':', 1)[0]
 
-DATABASE_URL = environ.get('DATABASE_URL', '')
+DATABASE_URL = environ.get('mongodb+srv://gauravbpatel30_db_user:OkXmCaloMylsF97k@cluster0.qcnfq7f.mongodb.net/?appName=Cluster0', '')
 if len(DATABASE_URL) == 0:
     DATABASE_URL = None
 
